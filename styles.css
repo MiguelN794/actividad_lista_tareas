@@ -1,7 +1,17 @@
+header {
+    padding: 20px;
+    background-color: #cccccc;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    padding: 20px;
     background-color: #909090;
 }
 
@@ -15,6 +25,7 @@ input[type="text"] {
     width: 60%;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-top: 10px;
     margin-right: 10px;
 }
 
@@ -48,13 +59,11 @@ li {
 }
 
 button.delete {
-    margin-left: auto;
+    margin-left: 700px;
     background-color: #dc3545;
 }
 
-
-@media screen and (max-width: 600px) {
-    input[type="text"] {
-        width: 90%;
-    }
+button.completed {
+    margin-right: auto;
+    background-color: #84ff00;
 }

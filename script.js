@@ -16,8 +16,16 @@ function agregarTarea() {
             nuevaTareaInput.value = "";
         }
 
+        const botonCompletar = document.createElement("button");
+        botonCompletar.textContent = "Completar";
+        botonCompletar.className = "completed";
+        botonCompletar.onclick = function () {
+            marcarCompletada(nuevaTarea);
+        }
+
         nuevaTarea.appendChild(botonEliminar);
         listaTareas.appendChild(nuevaTarea);
+        nuevaTarea.appendChild(botonCompletar);
     }
 
 }
