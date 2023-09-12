@@ -53,10 +53,6 @@ li {
     border-radius: 5px;
 }
 
-.completed {
-    text-decoration: line-through;
-    color: #888;
-}
 
 button.delete {
     margin-left: 700px;
@@ -66,4 +62,29 @@ button.delete {
 button.completed {
     margin-right: auto;
     background-color: #84ff00;
+
+}
+
+button.completed.gris {
+    background-color: gray;
+
+
+}
+
+button.completed.verde {
+    background-color: green;
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
 }
